@@ -1,0 +1,73 @@
+.file-output {
+  background-color: #f3f3f3;
+  min-width: 350px;
+  height: 500px;
+  margin-bottom: 55px;
+
+  border: 2px solid rgb(189, 189, 189);
+  border-radius: 8px;
+
+  &-zerostate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .loader {
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    &-label {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #0097e6;
+      font-weight: 500;
+    }
+  }
+
+  .cupom-value {
+    &-container {
+      display: flex;
+      flex-direction: row;
+      margin: 10px 15px;
+      justify-content: space-between;
+    }
+
+    &-label {
+      margin-right: 5px;
+      font-size: 16px;
+    }
+
+    &-value {
+      font-size: 14px;
+    }
+
+    &-products {
+      margin: 25px 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px;
+      }
+
+      &-label {
+        text-align: start;
+      }
+
+      &-value {
+        text-align: center;
+      }
+    }
+  }
+}
