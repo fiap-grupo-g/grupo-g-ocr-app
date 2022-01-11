@@ -5,7 +5,6 @@ import tempIcon from '../assets/temp-social-contract-icon.svg';
 import closeIcon from '../assets/clear-field.svg';
 import { acceptedFileExtensions, fileToBase64 } from "./utils";
 import { fileExtensions, MAX_DOCUMENT_FILE_SIZE_IN_BYTES } from "./constants";
-
 import { readCupom } from '../common/store/thunks/cupomFiscal';
 
 import "./styles.scss";
@@ -36,7 +35,6 @@ const FileUpload = ({ setMode }) => {
     const fileBase64 = await fileToBase64(file);
 
     if (fileBase64.size > MAX_DOCUMENT_FILE_SIZE_IN_BYTES) {
-      // onMaxSizeExceed();
       return;
     }
 
@@ -85,6 +83,6 @@ const FileUpload = ({ setMode }) => {
       {isFileSelected ? renderCupomFile() : renderFileInput()}
     </div>
   )
-}
+};
 
 export default FileUpload;
